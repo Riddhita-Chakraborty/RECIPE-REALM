@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe List</title>
+    <link rel="stylesheet" href="styles_recipelist.css"> 
+</head>
+<body>
+    <!--<h1>Recipe List</h1>
+    <ul>
+        {% for recipe in recipes %}
+            <li><a href="{{ url_for('recipe', index=loop.index0) }}">{{ recipe }}</a></li>
+        {% endfor %}
+    </ul>
+    <p><a href="/">Back to Home</a></p>-->
+    <body>
+        <div class="container">
+            <h1 class="headName">recipe list</h1>
+            <form action="" class="col-md-6 m-auto py-5">
+                <div class="input-group mb-3">
+                    <input type="text" id="inputName" class="form-control" placeholder="Search for a meal...." aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-primary" type="button" id="button">Search</button>
+                  </div>
+            </form>
+    
+            <div id="msg">
+                <h3>We Don't have the food you gave us. Please order something else if you want .......</h3>
+            </div>
+    
+            <div id="details" >
+    
+            </div>
+    
+            <div id="items">
+    
+            </div>
+    
+        </div>
+    </body>
+</body>
+</html>

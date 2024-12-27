@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECIPE - Recipe Details</title>
+    <!-- Link to Google Fonts for typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1, h2 {
+            color: #ff0000;
+        }
+
+        .container {
+            width: 80%;
+            margin: 40px auto;
+        }
+
+        .recipe-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .recipe-header img {
+            max-width: 400px;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .recipe-header .recipe-info {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .recipe-header h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .recipe-header p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .ingredients, .directions {
+            margin-bottom: 40px;
+        }
+
+        .ingredients ul, .directions ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .ingredients li, .directions li {
+            background: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .directions li {
+            background: #f9f9f9;
+        }
+
+        .back-btn {
+            display: inline-block;
+            background-color: #ff0000;
+            color: white;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .back-btn:hover {
+            background-color: #a00d1c;
+        }
+
+        footer {
+            background-color: #f42559;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .recipe-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .recipe-header img {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Recipe Header -->
+        <div class="recipe-header">
+            <!-- Recipe Image -->
+            <div class="recipe-info">
+                <h1>RECIPE </h1>
+                <p>DESCRIPTION </p>
+            </div>
+        </div>
+
+        <!-- Ingredients Section -->
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                
+                    <li>  .</li>
+                
+            </ul>
+        </div>
+
+        <!-- Directions Section -->
+        <div class="directions">
+            <h2>Directions</h2>
+            <ul>
+                    <li>.</li>
+            </ul>
+        </div>
+
+        <!-- Back Button -->
+        <a href="recipe_list.html" class="back-btn">Back to Recipe List</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Recipe App. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
